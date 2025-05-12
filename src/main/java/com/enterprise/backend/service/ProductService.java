@@ -65,14 +65,14 @@ public class ProductService extends BaseService<Product, Long, ProductRepository
     private final UserRepository userRepository;
 
     protected ProductService(ProductRepository repo,
-                             ProductTransformer transformer,
-                             EntityManager em,
-                             EmailService emailService,
-                             ProductOrderTransformer productOrderTransformer,
-                             CategoryRepository categoryRepository,
-                             OrderRepository orderRepository,
-                             ProductOrderRepository productOrderRepository,
-                             UserRepository userRepository) {
+                            ProductTransformer transformer,
+                            EntityManager em,
+                            EmailService emailService,
+                            ProductOrderTransformer productOrderTransformer,
+                            CategoryRepository categoryRepository,
+                            OrderRepository orderRepository,
+                            ProductOrderRepository productOrderRepository,
+                            UserRepository userRepository) {
         super(repo, transformer, em);
         this.emailService = emailService;
         this.productOrderTransformer = productOrderTransformer;
